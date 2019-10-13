@@ -11,6 +11,9 @@
     android:background="#ffffff"
     >
 
+    <!--회원가입 화면-->
+
+
     <ImageView
         android:layout_marginTop="30dp"
         android:layout_width="150dp"

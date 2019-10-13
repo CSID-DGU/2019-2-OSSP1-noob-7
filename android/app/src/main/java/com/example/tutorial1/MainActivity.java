@@ -20,8 +20,18 @@ public class MainActivity extends AppCompatActivity {
 
         input_email = findViewById(R.id.input_email);
         input_pw = findViewById(R.id.input_pw);
-        login_button = findViewById(R.id.login_button);
-        signup_button = findViewById(R.id.signup_button);
-        
+        login_button = (Button)findViewById(R.id.login_button);
+
+        signup_button = (Button)findViewById(R.id.signup_button);
+
+        signup_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, SignUpActivity.class);
+
+                startActivity(intent);
+            }
+        });
     }
 }
