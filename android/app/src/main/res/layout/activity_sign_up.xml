@@ -28,6 +28,10 @@
         android:layout_height="50dp"
 
         android:hint="First Name"
+
+        android:background="@drawable/button_navy"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="30dp"
         />
 
     <EditText
@@ -35,6 +39,43 @@
         android:layout_height="50dp"
 
         android:hint="Last Name"
+
+        android:background="@drawable/button_navy"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="30dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:hint="E-mail"
+
+        android:background="@drawable/button_navy"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="30dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:hint="Password"
+
+        android:background="@drawable/button_navy"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="30dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button_blue"
+        android:text="Create Account"
+        android:textSize="22dp"
+        android:textColor="#ffffff"
+
+        android:textAllCaps="false"
         />
 
 
