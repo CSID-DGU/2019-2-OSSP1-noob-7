@@ -8,7 +8,9 @@
     android:paddingLeft="15dp"
     android:paddingRight="15dp"
     android:background="#ffffff"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+
+    >
 
     <!--로그인 로고-->
     <ImageView
@@ -41,6 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:hint="Password"
+        android:inputType="textPassword"
         android:layout_marginBottom="10dp"
         android:id="@+id/input_pw"
         />
