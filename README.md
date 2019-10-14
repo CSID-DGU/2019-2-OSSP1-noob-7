@@ -1,7 +1,7 @@
 # 2019-2-OSSP1-noob-7
 ### 운동보조 애플리케이션
 
-![alt text](https://github.com/CSID-DGU/2019-2-OSSP1-noob-7/blob/master/android/app/src/main/res/drawable/main_logo.png){: width="100" height="100"}
+![alt text](https://github.com/CSID-DGU/2019-2-OSSP1-noob-7/blob/master/android/app/src/main/res/drawable/main_logo.png)
 
 # 팀원
 * 권영민
