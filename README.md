@@ -3,7 +3,7 @@
 
 Inline-style:
 ![alt text](https://github.com/CSID-DGU/2019-2-OSSP1-noob-7/blob/master/android/app/src/main/res/drawable/main_logo.png)
-
+<img width="20dp" height="20dp"></img>
 # 팀원
 * 권영민
 * 하지영
