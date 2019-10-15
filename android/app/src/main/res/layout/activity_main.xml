@@ -6,6 +6,9 @@
     android:layout_height="match_parent"
 
     android:weightSum="100"
+
+    android:background="#ffffff"
+    android:layout_marginTop="30dp"
     >
 
     <LinearLayout
@@ -17,18 +20,21 @@
         android:layout_weight="35"
         >
 
-        <Button
+        <ImageButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="5"
 
-            android:layout_marginLeft="25dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="25dp"
 
+            android:src="@drawable/gym"
+            android:scaleType="fitCenter"
+            android:background="#ffffff"
             />
 
-        <Button
+        <ImageButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="5"
@@ -37,6 +43,9 @@
             android:layout_marginRight="25dp"
             android:layout_marginTop="25dp"
 
+            android:src="@drawable/journal"
+            android:scaleType="fitCenter"
+            android:background="#ffffff"
             />
 
     </LinearLayout>
@@ -49,7 +58,7 @@
         android:layout_weight="35"
         >
 
-        <Button
+        <ImageButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="5"
@@ -58,9 +67,12 @@
             android:layout_marginRight="10dp"
             android:layout_marginTop="25dp"
 
+            android:src="@drawable/meal"
+            android:scaleType="fitCenter"
+            android:background="#ffffff"
             />
 
-        <Button
+        <ImageButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="5"
@@ -69,6 +81,9 @@
             android:layout_marginRight="25dp"
             android:layout_marginTop="25dp"
 
+            android:src="@drawable/workout"
+            android:scaleType="fitCenter"
+            android:background="#ffffff"
             />
 
     </LinearLayout>
@@ -82,7 +97,7 @@
         android:weightSum="10"
         >
 
-        <Button
+        <ImageButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="5"
@@ -90,10 +105,13 @@
             android:layout_marginLeft="25dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="25dp"
+            android:src="@drawable/weight"
 
+            android:scaleType="fitCenter"
+            android:background="#ffffff"
             />
 
-        <Button
+        <ImageButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="5"
@@ -102,6 +120,9 @@
             android:layout_marginRight="25dp"
             android:layout_marginTop="25dp"
 
+            android:src="@drawable/setting"
+            android:scaleType="fitCenter"
+            android:background="#ffffff"
             />
     </LinearLayout>
 
