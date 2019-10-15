@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
     EditText input_email, input_pw;
     Button login_button, signup_button;
 
+    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
