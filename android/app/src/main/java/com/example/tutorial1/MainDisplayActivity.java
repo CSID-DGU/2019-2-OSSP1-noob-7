@@ -1,6 +1,7 @@
 package com.example.tutorial1;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -22,13 +23,17 @@ public class MainDisplayActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         tv_id = findViewById(R.id.tv_id);
-        tv_pass = findViewById(R.id.tv_pass);
+        // tv_pass = findViewById(R.id.tv_pass);
 
         Intent intent = getIntent();
         String userID = intent.getStringExtra("userID");
         String userPass = intent.getStringExtra("userPass");
 
+        String strColor = "#004489";
+
         tv_id.setText(userID);
-        tv_pass.setText(userPass);
+        tv_id.setTextColor(Color.parseColor(strColor));
+        tv_id.setTextSize(20);
+        // tv_pass.setText(userPass);
     }
 }
