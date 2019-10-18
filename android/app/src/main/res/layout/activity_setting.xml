@@ -19,9 +19,107 @@
 
         />
 
-    <EditText
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"/>
+        android:layout_height="60dp"
+
+        android:weightSum="10"
+
+        android:orientation="horizontal"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_marginTop="50dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:text="HEIGHT :"
+
+            android:textSize="30dp"
+
+            android:textColor="#004489"
+
+            android:layout_weight="6.5"
+
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:textSize="30dp"
+
+            android:textColor="#000000"
+            android:layout_weight="3.5"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:weightSum="10"
+
+        android:orientation="horizontal"
+
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:text="WEIGHT :"
+
+            android:textSize="30dp"
+
+            android:textColor="#004489"
+
+            android:layout_weight="6.5"
+
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:textSize="30dp"
+
+            android:textColor="#000000"
+            android:layout_weight="3.5"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+
+        android:layout_marginTop="60dp"
+
+        android:layout_gravity="center"
+
+        android:background="@drawable/button_blue"
+
+        android:text="SAVE"
+
+        android:textColor="#ffffff"
+
+        android:textSize="20dp"
+        />
+
 
 
 
