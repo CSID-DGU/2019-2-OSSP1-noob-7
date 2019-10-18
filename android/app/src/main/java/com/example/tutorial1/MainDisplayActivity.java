@@ -3,6 +3,9 @@ package com.example.tutorial1;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -15,6 +18,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainDisplayActivity extends AppCompatActivity {
 
     private TextView tv_id, tv_pass;
+    ImageButton btn_setting;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -24,6 +28,7 @@ public class MainDisplayActivity extends AppCompatActivity {
 
         tv_id = findViewById(R.id.tv_id);
         // tv_pass = findViewById(R.id.tv_pass);
+        btn_setting = findViewById(R.id.btn_setting);
 
         Intent intent = getIntent();
         String userID = intent.getStringExtra("userID");
@@ -35,5 +40,15 @@ public class MainDisplayActivity extends AppCompatActivity {
         tv_id.setTextColor(Color.parseColor(strColor));
         tv_id.setTextSize(20);
         // tv_pass.setText(userPass);
+
+        btn_setting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainDisplayActivity.this, SettingActivity.class);
+
+                startActivity(intent);
+            }
+        });
     }
 }

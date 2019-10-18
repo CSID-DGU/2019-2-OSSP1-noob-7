@@ -166,6 +166,8 @@
             android:src="@drawable/setting"
             android:scaleType="fitCenter"
             android:background="#ffffff"
+
+            android:id="@+id/btn_setting"
             />
     </LinearLayout>
 
