@@ -6,7 +6,22 @@
     android:background="#ffffff"
     >
 
-    
+    <ImageView
+        android:layout_width="150dp"
+
+        android:layout_height="150dp"
+
+        android:layout_gravity="center"
+
+        android:layout_marginTop="30dp"
+
+        android:src="@drawable/setting_2"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
 
 
 
