@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
                             }
                             else { // 로그인에 실패한 경우
-                                Toast.makeText(getApplicationContext(), "로그인에 실패하였습니다.",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "아이디 또는 비밀번호가 틀렸습니다.",Toast.LENGTH_SHORT).show();
                                 return;
 
                             }
