@@ -11,7 +11,16 @@ import android.view.ViewGroup;
 
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.charts.PieChart;
+import com.github.mikephil.charting.components.Description;
+import com.github.mikephil.charting.data.BarData;
+import com.github.mikephil.charting.data.BarDataSet;
+import com.github.mikephil.charting.data.BarEntry;
+import com.github.mikephil.charting.data.PieData;
+import com.github.mikephil.charting.data.PieDataSet;
+import com.github.mikephil.charting.data.PieEntry;
+import com.github.mikephil.charting.utils.ColorTemplate;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -60,6 +69,29 @@ public class ChartFragment extends Fragment {
                 {
                     if(method.equals("bars"))
                     {
+                        List<BarEntry> barEntries = new ArrayList<>();
+
+                        for(GraphActivity growth : response.body())
+                        {
+                            barEntries.add(new BarEntry(growth.getYear(),growth.getGrowth_Rate()));
+
+                        }
+
+                        BarDataSet barDataSet = new BarDataSet(barEntries, "Growth");
+                        barDataSet.setColors(ColorTemplate.COLORFUL_COLORS);
+
+                        BarData barData = new BarData(barDataSet);
+                        barData.setBarWidth(0.9f);
+
+                        mBarChart.setVisibility(View.VISIBLE);
+                        mBarChart.animateY(5000);
+                        mBarChart.setData(barData);
+                        mBarChart.setFitBars(true);
+
+                        Description description = new Description();
+                        description.setText("Weight Change");
+                        mBarChart.setDescription(description);
+                        mBarChart.invalidate();
 
 
                     }
@@ -67,6 +99,28 @@ public class ChartFragment extends Fragment {
                     else if(method.equals("pie"))
                     {
 
+                        List<PieEntry> pieEntries = new ArrayList<>();
+
+                        for(GraphActivity growth : response.body())
+                        {
+                            pieEntries.add(new PieEntry(growth.getGrowth_Rate(),Integer.toString(growth.getYear())));
+
+                        }
+
+                        mPieChart.setVisibility(View.VISIBLE);
+                        mPieChart.animateXY(5000, 5000);
+
+                        PieDataSet pieDataSet = new PieDataSet(pieEntries, "Weight Change");
+                        pieDataSet.setColors(ColorTemplate.COLORFUL_COLORS);
+
+                        PieData pieData = new PieData(pieDataSet);
+
+                        mPieChart.setData(pieData);
+
+                        Description description = new Description();
+                        description.setText("Weight Change");
+                        mPieChart.setDescription(description);
+                        mPieChart.invalidate();
 
                     }
 
