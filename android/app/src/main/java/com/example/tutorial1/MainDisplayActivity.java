@@ -18,7 +18,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainDisplayActivity extends AppCompatActivity {
 
     private TextView tv_id, tv_pass;
-    ImageButton btn_setting;
+    ImageButton btn_setting, btn_graph;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -29,6 +29,7 @@ public class MainDisplayActivity extends AppCompatActivity {
         tv_id = findViewById(R.id.tv_id);
         // tv_pass = findViewById(R.id.tv_pass);
         btn_setting = findViewById(R.id.btn_setting);
+        btn_graph = findViewById(R.id.btn_graph);
 
         Intent intent = getIntent();
         String userID = intent.getStringExtra("userID");
@@ -46,6 +47,16 @@ public class MainDisplayActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(MainDisplayActivity.this, SettingActivity.class);
+
+                startActivity(intent);
+            }
+        });
+
+        btn_graph.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainDisplayActivity.this, GraphActivity.class);
 
                 startActivity(intent);
             }

@@ -58,12 +58,12 @@ public class ChartFragment extends Fragment {
 
     private void getGrowthChart(final String method)
     {
-        Call<List<GraphActivity>> call = ApiClient.getApiClient().create(ApiInterface.class).getGrowthInfo();
+        Call<List<Growth>> call = ApiClient.getApiClient().create(ApiInterface.class).getGrowthInfo();
 
 
-        call.enqueue(new Callback<List<GraphActivity>>() {
+        call.enqueue(new Callback<List<Growth>>() {
             @Override
-            public void onResponse(Call<List<GraphActivity>> call, Response<List<GraphActivity>> response) {
+            public void onResponse(Call<List<Growth>> call, Response<List<Growth>> response) {
 
                 if(response.body()!=null)
                 {
@@ -71,7 +71,7 @@ public class ChartFragment extends Fragment {
                     {
                         List<BarEntry> barEntries = new ArrayList<>();
 
-                        for(GraphActivity growth : response.body())
+                        for(Growth growth : response.body())
                         {
                             barEntries.add(new BarEntry(growth.getYear(),growth.getGrowth_Rate()));
 
@@ -101,7 +101,7 @@ public class ChartFragment extends Fragment {
 
                         List<PieEntry> pieEntries = new ArrayList<>();
 
-                        for(GraphActivity growth : response.body())
+                        for(Growth growth : response.body())
                         {
                             pieEntries.add(new PieEntry(growth.getGrowth_Rate(),Integer.toString(growth.getYear())));
 
@@ -132,7 +132,7 @@ public class ChartFragment extends Fragment {
             }
 
             @Override
-            public void onFailure(Call<List<GraphActivity>> call, Throwable t) {
+            public void onFailure(Call<List<Growth>> call, Throwable t) {
 
             }
         });

@@ -1,22 +1,33 @@
 package com.example.tutorial1;
 
-import com.google.gson.annotations.SerializedName;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
-public class GraphActivity {
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
-    @SerializedName("year")
+import com.github.mikephil.charting.charts.LineChart;
 
-    private int Year;
+public class GraphActivity extends AppCompatActivity {
 
-    @SerializedName("growth_rate")
-    private float Growth_Rate;
+    EditText xValue, yValue;
+    Button insertBtn;
+    LineChart lineChart;
 
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
-    public int getYear() {
-        return Year;
+        setContentView(R.layout.activity_graph);
+
+        xValue = findViewById(R.id.xTextView);
+        yValue = findViewById(R.id.yTextView);
+        insertBtn = findViewById(R.id.btnInsert);
+        lineChart = findViewById(R.id.lineChartView);
     }
 
-    public float getGrowth_Rate() {
-        return Growth_Rate;
-    }
+
 }

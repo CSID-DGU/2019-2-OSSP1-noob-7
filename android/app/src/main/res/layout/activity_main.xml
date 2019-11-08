@@ -152,6 +152,8 @@
 
             android:scaleType="fitCenter"
             android:background="#ffffff"
+
+            android:id="@+id/btn_graph"
             />
 
         <ImageButton
