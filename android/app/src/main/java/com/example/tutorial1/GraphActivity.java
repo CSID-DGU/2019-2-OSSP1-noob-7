@@ -12,6 +12,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.data.Entry;
+import com.github.mikephil.charting.data.LineData;
+import com.github.mikephil.charting.data.LineDataSet;
+import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -28,6 +31,11 @@ public class GraphActivity extends AppCompatActivity {
 
     FirebaseDatabase firebaseDatabase;
     DatabaseReference myRef;
+
+    LineDataSet lineDataSet = new LineDataSet(null,null);
+    ArrayList<ILineDataSet> iLineDataSets = new ArrayList<>();
+
+    LineData lineData;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -89,6 +97,12 @@ public class GraphActivity extends AppCompatActivity {
 
                     showChart(dataVals);
                 }
+                else {
+
+                    lineChart.clear();
+                    lineChart.invalidate();
+
+                }
 
             }
 
@@ -101,6 +115,16 @@ public class GraphActivity extends AppCompatActivity {
     }
 
     private void showChart(ArrayList<Entry> dataVals) {
+
+        lineDataSet.setValues(dataVals);
+
+        lineDataSet.setLabel("DataSet 1");
+
+        iLineDataSets.clear();
+
+        iLineDataSets.add(lineDataSet);
+        lineData = new LineData(iLineDataSets);
+
     }
 
 
