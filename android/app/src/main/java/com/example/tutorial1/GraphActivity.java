@@ -10,12 +10,17 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.mikephil.charting.charts.LineChart;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class GraphActivity extends AppCompatActivity {
 
     EditText xValue, yValue;
     Button insertBtn;
     LineChart lineChart;
+
+    FirebaseDatabase firebaseDatabase;
+    DatabaseReference myRef;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -27,6 +32,31 @@ public class GraphActivity extends AppCompatActivity {
         yValue = findViewById(R.id.yTextView);
         insertBtn = findViewById(R.id.btnInsert);
         lineChart = findViewById(R.id.lineChartView);
+
+        firebaseDatabase = FirebaseDatabase.getInstance();
+
+        myRef = firebaseDatabase.getReference("ChartValues");
+
+        insertData();
+    }
+
+    private void insertData() {
+
+        insertBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String id = myRef.push().getKey();
+
+                int x = Integer.parseInt(xValue.getText().toString());
+
+                int y = Integer.parseInt(yValue.getText().toString());
+
+                DataPoint dataPoint = new DataPoint(x,y);
+
+            }
+        });
+
     }
 
 
