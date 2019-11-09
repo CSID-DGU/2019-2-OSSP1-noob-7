@@ -6,12 +6,19 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.mikephil.charting.charts.LineChart;
+import com.github.mikephil.charting.data.Entry;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
 
 public class GraphActivity extends AppCompatActivity {
 
@@ -54,9 +61,46 @@ public class GraphActivity extends AppCompatActivity {
 
                 DataPoint dataPoint = new DataPoint(x,y);
 
+                myRef.child(id).setValue(dataPoint);
+
+                retrieveData();
+
             }
         });
 
+    }
+
+    private void retrieveData() {
+
+        myRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+                ArrayList<Entry> dataVals = new ArrayList<Entry>();
+
+                if(dataSnapshot.hasChildren()){
+
+                    for(DataSnapshot myDataSnapshot : dataSnapshot.getChildren()){
+
+                        DataPoint dataPoint = myDataSnapshot.getValue(DataPoint.class);
+                        dataVals.add(new Entry(dataPoint.getxValue(), dataPoint.getyValue()));
+
+                    }
+
+                    showChart(dataVals);
+                }
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
+    }
+
+    private void showChart(ArrayList<Entry> dataVals) {
     }
 
 
