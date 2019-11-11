@@ -26,6 +26,8 @@
         <activity android:name=".SettingActivity"></activity>
         <activity android:name=".GraphActivity"></activity>
 
+        <activity android:name=".BarChart_Activity"></activity>
+
 
     </application>
 

@@ -53,13 +53,15 @@ public class GraphActivity extends AppCompatActivity {
         myRef = firebaseDatabase.getReference("ChartValues");
 
         insertData();
+
+        lineDataSet.setLineWidth(4);
     }
 
     private void insertData() {
 
         insertBtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
 
                 String id = myRef.push().getKey();
 
@@ -124,6 +126,12 @@ public class GraphActivity extends AppCompatActivity {
 
         iLineDataSets.add(lineDataSet);
         lineData = new LineData(iLineDataSets);
+
+        lineChart.clear();
+
+        lineChart.setData(lineData);
+
+        lineChart.invalidate();
 
     }
 

@@ -56,7 +56,7 @@ public class MainDisplayActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainDisplayActivity.this, GraphActivity.class);
+                Intent intent = new Intent(MainDisplayActivity.this, BarChart_Activity.class);
 
                 startActivity(intent);
             }
