@@ -89,6 +89,8 @@
             android:src="@drawable/journal"
             android:scaleType="fitCenter"
             android:background="#ffffff"
+
+            android:id="@+id/btn_workout"
             />
 
     </LinearLayout>

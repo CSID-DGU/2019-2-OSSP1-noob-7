@@ -28,6 +28,7 @@
 
         <activity android:name=".BarChart_Activity"></activity>
 
+        <activity android:name=".WorkoutActivity"></activity>
 
     </application>
 
