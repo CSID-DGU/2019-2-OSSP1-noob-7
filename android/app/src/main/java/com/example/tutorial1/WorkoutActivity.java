@@ -34,6 +34,38 @@ public class WorkoutActivity extends AppCompatActivity {
 
         m.setTitle("News Feed");
         m.setDescription("This is newsfeed description");
-        
+        m.setImg(R.drawable.main_logo);
+        models.add(m);
+
+        m = new Model();
+
+        m.setTitle("News Feed");
+        m.setDescription("This is newsfeed description");
+        m.setImg(R.drawable.main_logo);
+        models.add(m);
+
+        m = new Model();
+
+        m.setTitle("News Feed");
+        m.setDescription("This is newsfeed description");
+        m.setImg(R.drawable.main_logo);
+        models.add(m);
+
+        m = new Model();
+
+        m.setTitle("News Feed");
+        m.setDescription("This is newsfeed description");
+        m.setImg(R.drawable.main_logo);
+        models.add(m);
+
+        m = new Model();
+
+        m.setTitle("News Feed");
+        m.setDescription("This is newsfeed description");
+        m.setImg(R.drawable.main_logo);
+        models.add(m);
+
+        return models;
+
     }
 }
