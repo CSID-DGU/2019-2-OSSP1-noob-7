@@ -7,7 +7,7 @@
 
     android:orientation="vertical"
 
-    android:layout_marginLeft="10dp"
+    android:layout_marginLeft="5dp"
     android:layout_marginTop="15dp"
     >
 
@@ -44,7 +44,7 @@
 
             android:textColor="#ffffff"
 
-            
+            android:id="@+id/btn_chest"
             />
 
 
@@ -83,6 +83,8 @@
             android:textColor="#ffffff"
 
             android:background="@drawable/button_blue"
+
+            android:id="@+id/btn_back"
             />
 
 
@@ -125,6 +127,8 @@
             android:textColor="#ffffff"
 
             android:background="@drawable/button_blue"
+
+            android:id="@+id/btn_shoulders"
             />
 
 
@@ -166,6 +170,8 @@
             android:background="@drawable/button_blue"
 
             android:textColor="#ffffff"
+
+            android:id="@+id/btn_legs"
             />
 
 
@@ -204,6 +210,8 @@
             android:textColor="#ffffff"
 
             android:background="@drawable/button_blue"
+
+            android:id="@+id/btn_arms"
             />
 
 
