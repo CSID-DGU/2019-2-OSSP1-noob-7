@@ -90,7 +90,7 @@
             android:scaleType="fitCenter"
             android:background="#ffffff"
 
-            android:id="@+id/btn_workout"
+
             />
 
     </LinearLayout>
@@ -129,6 +129,8 @@
             android:src="@drawable/workout"
             android:scaleType="fitCenter"
             android:background="#ffffff"
+
+            android:id="@+id/btn_workout"
             />
 
     </LinearLayout>

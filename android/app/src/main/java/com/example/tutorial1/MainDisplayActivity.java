@@ -26,6 +26,7 @@ public class MainDisplayActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
+        btn_workout = findViewById(R.id.btn_workout);
         tv_id = findViewById(R.id.tv_id);
         // tv_pass = findViewById(R.id.tv_pass);
         btn_setting = findViewById(R.id.btn_setting);
