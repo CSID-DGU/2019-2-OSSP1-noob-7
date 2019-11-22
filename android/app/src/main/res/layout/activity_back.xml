@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
 
-        android:text="Here’s how to Bench Press with proper form:"
+        android:text="Here’s how to Deadlift with proper form:"
         android:textColor="#000"
         android:padding="10dp"
         />
@@ -26,8 +26,32 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="1. Lie on the bench with your eyes under the bar"
+        android:layout_height="55dp"
+        android:text="1. With your feet flat beneath the barbell, squat down and grasp it with your hands roughly shoulder-width apart."
+        android:textColor="#000"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="2. Keep your chest up, pull your shoulders back and look straight ahead rather than up or down."
+        android:textColor="#000"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="3. Lift the bar, keeping it close to your legs and focus on taking the weight back onto your heels"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="4. Let the weight come to a complete rest between each rep."
         android:textColor="#000"
         android:padding="10dp"
         android:layout_marginLeft="20dp"
@@ -35,31 +59,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:text="2. Grab the bar with a medium grip-width"
-        android:textColor="#000"
-        android:padding="10dp"
-        android:layout_marginLeft="20dp"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="3. Unrack the bar by straightening your arms"
-        android:textColor="#000"
-        android:padding="10dp"
-        android:layout_marginLeft="20dp"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="4. Lower the bar to your mid-chest"
-        android:textColor="#000"
-        android:padding="10dp"
-        android:layout_marginLeft="20dp"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="5. Press the bar back up until your arms are straight"
+        android:text=""
         android:textColor="#000"
         android:padding="10dp"
         android:layout_marginLeft="20dp"

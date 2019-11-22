@@ -14,14 +14,14 @@ import com.google.android.youtube.player.YouTubePlayerView;
 public class BackActivity extends YouTubeBaseActivity {
 
     private final String API_KEY = "AIzaSyCvXeZ8vj_n9Qki2iqw_b3W2RW_ClDMujk";
-    private final String VIDEO_CODE = "Cse56EbcBSk";
+    private final String VIDEO_CODE = "vNzxQN-1kDI";
 
     YouTubePlayerView player2;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chest);
+        setContentView(R.layout.activity_back);
 
 
         player2 = (YouTubePlayerView)findViewById(R.id.player);
