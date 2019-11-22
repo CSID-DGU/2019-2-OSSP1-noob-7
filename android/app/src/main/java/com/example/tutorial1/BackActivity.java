@@ -16,7 +16,7 @@ public class BackActivity extends YouTubeBaseActivity {
     private final String API_KEY = "AIzaSyCvXeZ8vj_n9Qki2iqw_b3W2RW_ClDMujk";
     private final String VIDEO_CODE = "Cse56EbcBSk";
 
-    YouTubePlayerView player;
+    YouTubePlayerView player2;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -24,8 +24,8 @@ public class BackActivity extends YouTubeBaseActivity {
         setContentView(R.layout.activity_chest);
 
 
-        player = (YouTubePlayerView)findViewById(R.id.player);
-        player.initialize(API_KEY, new YouTubePlayer.OnInitializedListener() {
+        player2 = (YouTubePlayerView)findViewById(R.id.player);
+        player2.initialize(API_KEY, new YouTubePlayer.OnInitializedListener() {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
 
