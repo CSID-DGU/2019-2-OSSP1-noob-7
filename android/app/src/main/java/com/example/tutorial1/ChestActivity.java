@@ -1,6 +1,7 @@
 package com.example.tutorial1;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,11 +28,19 @@ public class ChestActivity extends YouTubeBaseActivity {
         player.initialize(API_KEY, new YouTubePlayer.OnInitializedListener() {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
-                
+
+                if(!b){
+                    youTubePlayer.loadVideo(VIDEO_CODE);
+                    youTubePlayer.setPlayerStyle(YouTubePlayer.PlayerStyle.DEFAULT);
+
+                }
+
             }
 
             @Override
             public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult youTubeInitializationResult) {
+
+                //Toast.makeText(ChestActivity.this, YouTubeInitializationResult.toString(), Toast.LENGTH_SHORT).show();
 
             }
         });

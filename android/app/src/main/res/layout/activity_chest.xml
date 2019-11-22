@@ -12,4 +12,57 @@
 
     </com.google.android.youtube.player.YouTubePlayerView>
 
+    <TextView
+
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:text="Here’s how to Bench Press with proper form:"
+        android:textColor="#000"
+        android:padding="10dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="1. Lie on the bench with your eyes under the bar"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="2. Grab the bar with a medium grip-width"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="3. Unrack the bar by straightening your arms"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="4. Lower the bar to your mid-chest"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="5. Press the bar back up until your arms are straight"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        />
+
 </LinearLayout>
