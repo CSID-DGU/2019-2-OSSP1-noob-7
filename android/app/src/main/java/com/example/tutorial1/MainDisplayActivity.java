@@ -31,6 +31,7 @@ public class MainDisplayActivity extends AppCompatActivity {
         // tv_pass = findViewById(R.id.tv_pass);
         btn_setting = findViewById(R.id.btn_setting);
         btn_graph = findViewById(R.id.btn_graph);
+        btn_journal = findViewById(R.id.btn_journal);
 
         Intent intent = getIntent();
         String userID = intent.getStringExtra("userID");
