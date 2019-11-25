@@ -13,8 +13,8 @@ import com.google.android.youtube.player.YouTubePlayerView;
 
 public class BackActivity extends YouTubeBaseActivity {
 
-    private final String API_KEY = "AIzaSyCvXeZ8vj_n9Qki2iqw_b3W2RW_ClDMujk";
-    private final String VIDEO_CODE = "vNzxQN-1kDI";
+    private final String API_KEY2 = "AIzaSyCvXeZ8vj_n9Qki2iqw_b3W2RW_ClDMujk";
+    private final String VIDEO_CODE2 = "vNzxQN-1kDI";
 
     YouTubePlayerView player2;
 
@@ -24,13 +24,13 @@ public class BackActivity extends YouTubeBaseActivity {
         setContentView(R.layout.activity_back);
 
 
-        player2 = (YouTubePlayerView)findViewById(R.id.player);
-        player2.initialize(API_KEY, new YouTubePlayer.OnInitializedListener() {
+        player2 = (YouTubePlayerView)findViewById(R.id.player2);
+        player2.initialize(API_KEY2, new YouTubePlayer.OnInitializedListener() {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
 
                 if(!b){
-                    youTubePlayer.loadVideo(VIDEO_CODE);
+                    youTubePlayer.loadVideo(VIDEO_CODE2);
                     youTubePlayer.setPlayerStyle(YouTubePlayer.PlayerStyle.DEFAULT);
 
                 }
