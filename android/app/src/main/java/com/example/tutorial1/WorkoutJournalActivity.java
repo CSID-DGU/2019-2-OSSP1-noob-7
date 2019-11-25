@@ -18,7 +18,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity  {
+public class WorkoutJournalActivity extends AppCompatActivity  {
 
     Chronometer chrono;
     Button btnStart, btnEnd, btnEND;
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity  {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_journal);
         setTitle("출석 체크");
         //  화면 전환 - 인텐트 날림
         // 1. 넘어갈 화면 - menuActivity
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity  {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),memoActivity.class);
+                Intent intent = new Intent(getApplicationContext(),MemoActivity.class);
                 startActivity(intent);
             }
         });
@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity  {
 
     private void showElapsedTime() {
         long elapsedMillis = SystemClock.elapsedRealtime() - chrono.getBase();
-        Toast.makeText(MainActivity.this, "Elapsed milliseconds: " + elapsedMillis,
+        Toast.makeText(WorkoutJournalActivity.this, "Elapsed milliseconds: " + elapsedMillis,
                 Toast.LENGTH_SHORT).show();
     }
 }

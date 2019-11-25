@@ -29,6 +29,7 @@
         <activity android:name=".ChestActivity"></activity>
         <activity android:name=".BackActivity"></activity>
         <activity android:name=".WorkoutJournalActivity"></activity>
+        <activity android:name=".MemoActivity"></activity>
 
     </application>
 
