@@ -91,6 +91,7 @@
             android:background="#ffffff"
 
 
+            android:id="@+id/btn_journal"
             />
 
     </LinearLayout>

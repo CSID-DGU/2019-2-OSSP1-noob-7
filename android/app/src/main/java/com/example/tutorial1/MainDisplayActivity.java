@@ -18,7 +18,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainDisplayActivity extends AppCompatActivity {
 
     private TextView tv_id, tv_pass;
-    ImageButton btn_setting, btn_graph, btn_workout;
+    ImageButton btn_setting, btn_graph, btn_workout, btn_journal;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -72,5 +72,16 @@ public class MainDisplayActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btn_journal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainDisplayActivity.this, WorkoutJournalActivity.class);
+
+                startActivity(intent);
+            }
+        });
+
     }
 }
