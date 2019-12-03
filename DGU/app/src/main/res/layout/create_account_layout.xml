@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorPrimary">
+
+    <EditText
+        android:id="@+id/inputFirstName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/first_name"
+        android:textColor="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/inputLastName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/last_name"
+        android:textColor="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/inputHeight"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/height_in_inches"
+        android:textColor="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/inputWeight"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/weight_in_pounds"
+        android:textColor="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/e_mail_address"
+        android:textColor="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        style="@style/Widget.AppCompat.Button.Colored"
+        />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"/>
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+</LinearLayout>

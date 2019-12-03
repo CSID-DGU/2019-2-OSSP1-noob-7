@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:weightSum="100"
+
+    android:background="#ffffff"
+    android:layout_marginTop="30dp"
+    >
+
+    <LinearLayout
+
+        android:layout_marginLeft="20dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+
+        android:weightSum="10"
+        >
+
+
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:text="you are logged in as : "-->
+
+<!--            android:layout_weight="6.5"-->
+<!--            android:textColor="#000000"-->
+
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:id="@+id/tv_id"-->
+
+<!--            android:layout_weight="3"-->
+
+            />
+
+    </LinearLayout>
+
+
+
+    <!--    <TextView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="20dp"-->
+    <!--        android:id="@+id/tv_pass"-->
+    <!--        />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+
+
+        android:layout_weight="35"
+        >
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp"
+
+            android:src="@drawable/gym"
+            android:scaleType="fitCenter"
+            android:background="#ffffff"
+            />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp"
+
+            android:src="@drawable/journal"
+            android:scaleType="fitCenter"
+            android:background="#ffffff"
+
+
+            android:id="@+id/btn_journal"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+
+        android:layout_weight="35"
+        >
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp"
+
+            android:src="@drawable/meal"
+            android:scaleType="fitCenter"
+            android:background="#ffffff"
+
+            android:id="@+id/btn_meals"
+            />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp"
+
+            android:src="@drawable/workout"
+            android:scaleType="fitCenter"
+            android:background="#ffffff"
+
+            android:id="@+id/btn_workout"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+
+        android:layout_weight="35"
+        android:weightSum="10"
+        >
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/weight"
+
+            android:scaleType="fitCenter"
+            android:background="#ffffff"
+
+            android:id="@+id/btn_graph"
+            />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp"
+
+            android:src="@drawable/setting"
+            android:scaleType="fitCenter"
+            android:background="#ffffff"
+
+            android:id="@+id/btn_setting"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

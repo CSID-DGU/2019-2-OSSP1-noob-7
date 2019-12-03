@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/inputSearchTerms"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15sp"
+            android:hint="@string/search_terms"
+            android:inputType="textAutoCorrect"/>
+
+        <ImageButton
+            android:id="@+id/buttonSearchFilters"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_filter"
+            android:scaleType="fitXY"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonSearchGo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        android:layout_margin="3dp"/>
+
+
+</LinearLayout>

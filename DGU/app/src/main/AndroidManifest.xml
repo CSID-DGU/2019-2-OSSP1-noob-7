@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="DGU.OSSP.fall2019.DGU">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="2019-2-OSSP1-7"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="DGU.OSSP.fall2019.PersonalTrainer.Activities.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="DGU.OSSP.fall2019.PersonalTrainer.Activities.CreateAccountActivity"/>
+        <activity android:name="DGU.OSSP.fall2019.PersonalTrainer.Activities.MainActivity" />
+        <activity android:name="DGU.OSSP.fall2019.PersonalTrainer.Activities.ViewRecipeActivity" />
+        <activity android:name="DGU.OSSP.fall2019.PersonalTrainer.Activities.MainDisplayActivity" />
+        <activity android:name="DGU.OSSP.fall2019.PersonalTrainer.Activities.WorkoutActivity" />
+        <activity android:name="DGU.OSSP.fall2019.PersonalTrainer.Activities.ChestActivity" />
+        <activity android:name="DGU.OSSP.fall2019.PersonalTrainer.Activities.BackActivity" />
+        <activity android:name="DGU.OSSP.fall2019.PersonalTrainer.Activities.WorkoutJournalActivity" />
+        <activity android:name="DGU.OSSP.fall2019.PersonalTrainer.Activities.MemoActivity" />
+        <activity android:name="DGU.OSSP.fall2019.PersonalTrainer.Activities.BarChart_Activity" />
+        <activity android:name="DGU.OSSP.fall2019.PersonalTrainer.Activities.SettingActivity" />
+
+    </application>
+
+</manifest>

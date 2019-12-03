@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/mealDetailName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/meal_name"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/mealDetailPic"
+            android:layout_width="145dp"
+            android:layout_height="145dp"
+            android:layout_margin="10dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:id="@+id/buttonMealDetailFavorite"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_favorite_no"
+            android:scaleType="centerCrop"
+            android:layout_gravity="end|bottom"
+            android:layout_marginRight="50dp"/>
+        <Button
+            android:id="@+id/buttonMadeThis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I made this!"
+            android:layout_gravity="bottom"
+            android:visibility="invisible"/>
+        <Button
+            android:id="@+id/buttonSchedule"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Schedule Meal"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="20dp"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+    </FrameLayout>
+
+    <RatingBar
+        android:id="@+id/mealRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1"
+        android:layout_gravity="center_horizontal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/macros"
+            android:textSize="25sp"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/carbs"
+            android:layout_toStartOf="@id/mealDetailCarb"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/mealDetailCarb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:layout_toStartOf="@+id/tv3"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/g_protein"
+            android:layout_toStartOf="@id/mealDetailProtein"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/mealDetailProtein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:layout_toStartOf="@id/tv2"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/g_fat"
+            android:layout_toStartOf="@id/mealDetailFat"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/mealDetailFat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:layout_toStartOf="@id/tv1"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/g"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ingredients"
+            android:textSize="25sp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:id="@+id/buttonGoToRecipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/link_to_instructions"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/ingredientsList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ListView>
+
+
+</LinearLayout>
