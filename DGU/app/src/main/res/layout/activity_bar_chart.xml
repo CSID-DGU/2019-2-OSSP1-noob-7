@@ -56,12 +56,13 @@
 
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="50dp"
             android:text="MEAL"
 
-            android:id="@+id/btnInsert"
+            android:id="@+id/btnMeal"
 
+            android:background="@drawable/button_navy"
             android:layout_gravity="center"
             />
 
